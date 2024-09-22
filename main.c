@@ -15,7 +15,7 @@
 
 //ユーザー入力関数
   void userInput(int *num1, int *num2) {
-    printf("最後の数字を入力してください：");
+    printf("最初の数字を入力してください：");
     scanf("%d", num1);
 
     printf("次の数字を入力してください：");
