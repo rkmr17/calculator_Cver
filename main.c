@@ -27,6 +27,11 @@ int add(int num1, int num2) {
   return num1 + num2;
 }
 
+//減算関数
+int subtrac(int num1, int num2) {
+  return num1 - num2;
+}
+
 int main() {
   //プログラム起動時メッセージ
   printf("電卓アプリケーション\n");
