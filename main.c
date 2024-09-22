@@ -49,11 +49,13 @@ int divide(int num1, int num2) {
 int main() {
   //プログラム起動時メッセージ
   printf("電卓アプリケーション\n");
+  int choice, num1, num2, result;
 
+do {
   displayMenu();
 
   //ユーザー選択
-  int choice, num1, num2, result;
+  
   scanf("%d", &choice);
 
   switch (choice) {
@@ -88,5 +90,7 @@ int main() {
     printf("無効な選択です。\n");
     break;
   }
+} while (choice != 5);
+
   return 0;
 }
