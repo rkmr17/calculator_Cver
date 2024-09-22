@@ -59,6 +59,9 @@ int main() {
   switch (choice) {
   case 1:
     //加算
+    userInput(&num1, &num2);
+    result = add(num1, num2);
+    printf("結果：%d + %d = %d\n", num1, num2, result);
     break;
   case 2:
     //減算
