@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "include/calculator.h"
 
 //メニュー表示関数
   void displayMenu() {
@@ -12,6 +13,15 @@
     printf("選択してください：");
   }
 
+//ユーザー入力関数
+  void userInput(int *num1, int *num2) {
+    printf("最後の数字を入力してください：");
+    scanf("%d", num1);
+
+    printf("次の数字を入力してください：");
+    scanf("%d", num2);
+  }
+
 int main() {
   //プログラム起動時メッセージ
   printf("電卓アプリケーション\n");
@@ -19,7 +29,7 @@ int main() {
   displayMenu();
 
   //ユーザー選択
-  int choice;
+  int choice, num1, num2, result;
   scanf("%d", &choice);
 
   switch (choice) {
@@ -42,6 +52,5 @@ int main() {
     printf("無効な選択です。\n");
     break;
   }
-
   return 0;
 }
