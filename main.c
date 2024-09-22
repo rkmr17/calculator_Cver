@@ -22,6 +22,11 @@
     scanf("%d", num2);
   }
 
+//加算関数
+int add(int num1, int num2) {
+  return num1 + num2;
+}
+
 int main() {
   //プログラム起動時メッセージ
   printf("電卓アプリケーション\n");
