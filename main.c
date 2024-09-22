@@ -71,6 +71,9 @@ int main() {
     break;
   case 3:
     //乗算
+    userInput(&num1, &num2);
+    result = multiply(num1, num2);
+    printf("結果：%d * %d = %d\n", num1, num2, result);
     break;
   case 4:
     //除算
