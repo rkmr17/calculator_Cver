@@ -90,6 +90,22 @@ do {
     printf("無効な選択です。\n");
     break;
   }
+
+  printf("続けて計算しますか（y/n）:");
+  char keepChoice;
+  scanf(" %c", &keepChoice);
+  switch (keepChoice) {
+  case 'y':
+    break;
+  case 'n':
+    choice = 5;
+    printf("プログラムを終了します。\n");
+    break;
+  default:
+    printf("無効な選択です。\n");
+    break;
+  }
+
 } while (choice != 5);
 
   return 0;
