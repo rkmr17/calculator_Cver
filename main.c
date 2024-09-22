@@ -77,6 +77,9 @@ int main() {
     break;
   case 4:
     //除算
+    userInput(&num1, &num2);
+    result = divide(num1, num2);
+    printf("結果：%d / %d = %d\n", num1, num2, result);
     break;
   case 5:
     printf("プログラムを終了します。\n");
