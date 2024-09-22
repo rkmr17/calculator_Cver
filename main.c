@@ -1,9 +1,6 @@
 #include <stdio.h>
 
-int main() {
-  //プログラム起動時メッセージ
-  printf("電卓アプリケーション");
-
+//メニュー表示関数
   void displayMenu() {
     printf("===== 電卓メニュー =====\n");
     printf("1. 加算\n");
@@ -14,6 +11,10 @@ int main() {
     printf("=======================\n");
     printf("選択してください");
   }
+
+int main() {
+  //プログラム起動時メッセージ
+  printf("電卓アプリケーション");
 
   displayMenu();
 
