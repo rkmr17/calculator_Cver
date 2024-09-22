@@ -85,7 +85,7 @@ do {
     break;
   case 5:
     printf("プログラムを終了します。\n");
-    break;
+    return 0;
   default:
     printf("無効な選択です。\n");
     break;
