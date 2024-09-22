@@ -65,6 +65,9 @@ int main() {
     break;
   case 2:
     //減算
+    userInput(&num1, &num2);
+    result = subtrac(num1, num2);
+    printf("結果：%d - %d = %d\n", num1, num2, result);
     break;
   case 3:
     //乗算

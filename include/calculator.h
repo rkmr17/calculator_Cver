@@ -3,7 +3,7 @@
 #define CALCULATOR_H
 
 //加算関数プロトタイプ
-int add(int num1, int num2);
+int add(int a, int b);
 
 //減算関数プロトタイプ
 int subtract(int a, int b);
