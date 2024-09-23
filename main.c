@@ -46,6 +46,11 @@ int divide(int num1, int num2) {
   return num1 / num2;
 }
 
+//計算結果表示関数
+void printResult(char operator, int num1, int num2, int result) {
+  printf("結果： %d %c %d = %d\n", num1, operator, num2, result);
+}
+
 int main() {
   //プログラム起動時メッセージ
   printf("電卓アプリケーション\n");
