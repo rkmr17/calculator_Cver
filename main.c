@@ -63,28 +63,27 @@ do {
   
   scanf("%d", &choice);
 
+  //ユーザー数字入力
+  userInput(&num1, &num2);
+
   switch (choice) {
   case 1:
     //加算
-    userInput(&num1, &num2);
     result = add(num1, num2);
     printResult('+', num1, num2, result);
     break;
   case 2:
     //減算
-    userInput(&num1, &num2);
     result = subtrac(num1, num2);
     printResult('-', num1, num2, result);
     break;
   case 3:
     //乗算
-    userInput(&num1, &num2);
     result = multiply(num1, num2);
     printResult('*', num1, num2, result);
     break;
   case 4:
     //除算
-    userInput(&num1, &num2);
     result = divide(num1, num2);
     printResult('/', num1, num2, result);
     break;
